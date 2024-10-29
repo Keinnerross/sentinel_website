@@ -1,0 +1,28 @@
+#root {}
+
+
+main {
+  min-height: 80vh;
+
+}
+
+body{
+  background-color: rgb(219, 228, 236) !important;
+
+}
+
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
+}
+
+
+select{
+  color: black !important;
+}
