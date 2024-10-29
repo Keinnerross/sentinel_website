@@ -1,5 +1,5 @@
 import { useState } from "react";
-import HoverCard from "../common/header/hovercard";
+import HoverCard from "../../layout/header/hovercard";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 

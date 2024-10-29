@@ -20,12 +20,12 @@ const HomePage = () => {
             <div className="w-full h-[550px] flex justify-center items-center relative">
                 <div className={`flex  transition-[1s] h-full  absolute bottom-0  w-full  items-end bg-gradient-to-t from-black/75 to-black/75  z-[-1]`}></div>
                 <video src={videoBanner} autoPlay muted loop className="object-cover absolute w-[100%] h-full z-[-2] top-0" />
-                <div className="w-[75%] flex justify-center items-center  gap-8 text-center  text-white  ">
+                <div className="w-[90vw] md:w-[75%] flex justify-center items-center  gap-8 text-center  text-white  ">
                     <div className="w-[100%] text-center flex-col flex justify-center items-center">
-                        <div className="flex  w-3/4 justify-center font-bold   ">
+                        <div className="flex  md:w-3/4 justify-center font-bold   ">
                         </div>
                         {/* , Seguridad y Control a tu Alcance */}
-                        <h2 className="text-[4.4em] font-extrabold line leading-[5rem]">GPS para tus Vehículos, Seguridad y Control a tu Alcance</h2>
+                        <h2 className="text-5xl md:text-7xl font-extrabold line md:leading-[5rem]">GPS para tus Vehículos, Seguridad y Control a tu Alcance</h2>
                         <p className="pb-[25px] pt-6"> the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame blame blame belongs </p>
                         <Link to="/services/4" >
                             <PrimaryButton textBtn="Solicita una Demo" long={true} />
@@ -40,7 +40,7 @@ const HomePage = () => {
             </div>
 
             {/* Estadisticas */}
-            <div className="w-[90%] h-[450px] pt-[80px]  flex justify-between gap-[50px] ">
+            <div className="w-[90%] md:h-[450px] pt-[80px]  flex  flex-col md:flex-row justify-between gap-[50px] ">
                 <AuxCard />
                 <MainCard />
                 <TemperatureCard />

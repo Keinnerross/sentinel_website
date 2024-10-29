@@ -24,7 +24,7 @@ const TopBar = () => {
                 <div className="flex items-center gap-4">
                     <FaCommentDots fill="white" />   <p className="text-white text-sm text-left">Sentinel Asistent: su asistente IA para obtener información más rápida sobre nosotros</p>
                 </div>
-                <div className="flex text-white">
+                <div className="hidden md:flex text-white">
                     <li className={`h-full hover:bg-white hover:text-slate-900 p-4 cursor-pointer`}>Blog</li>
                     <li className={`h-full hover:bg-white hover:text-slate-900 p-4 cursor-pointer`}>Soporte</li>
                     <li className={`h-full hover:bg-white hover:text-slate-900 p-4 cursor-pointer`}>Comunidad</li>

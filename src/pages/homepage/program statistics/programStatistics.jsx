@@ -21,7 +21,7 @@ import PrimaryButton from "../../../common/buttons/primaryButton"
 const ProgramStatistics = () => {
     return (<Fragment>
 
-        <div id="ventajas" className="w-full flex justify-center items-center p-16">
+        <div id="ventajas" className="w-full hidden md:flex justify-center items-center p-16">
             <div className="flex justify-between w-[90%]">
                 <h3 className="text-4xl w-[40%]">
                     Contamos con el software de rastreo GPS y video telemática más robusto de la industria.
@@ -37,7 +37,7 @@ const ProgramStatistics = () => {
             </div>
         </div>
 
-        <div className="w-full flex justify-end pb-10">
+        <div className="w-full hidden md:flex justify-end pb-10">
 
             <div className="w-[95%] flex justify-end ">
                 <div className="flex justify-between w-full">

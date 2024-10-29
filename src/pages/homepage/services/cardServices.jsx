@@ -9,12 +9,12 @@ const CardService = ({ title, description, url, Icon, id }) => {
         <div
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
-            className="min-h-[280px] w-[30%] rounded-[12px] cursor-pointer bg-cover bg-center relative hover:shadow-header-shadow "
+            className="min-h-[350px] md:min-h-[280px] w-full md:w-[30%] rounded-[12px] cursor-pointer bg-cover bg-center relative hover:shadow-header-shadow "
             style={{ backgroundImage: `url(${url})` }}
         >
             <a href={`/services/${id}`}>
                 <div
-                    className={`${isHover ? "opacity-100" : "opacity-0"
+                    className={`${isHover ? "opacity-100" : "opacity-100 md:opacity-0"
                         } transition-opacity duration-200 ease-in-out rounded-[12px] h-full absolute bottom-0 z-50 w-full flex items-end bg-gradient-to-t from-black/100 to-black/40`}
                 >
                     <div className="text-white px-6 py-8">

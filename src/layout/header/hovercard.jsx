@@ -2,7 +2,7 @@ import { services } from "../../pages/homepage/services/dataServices"
 
 const HoverCard = ({ isActive, setIsActive }) => {
     return (
-        <div className={`${isActive ? "flex" : "hidden"} flex-col absolute top-[50px] right-[-40] bg-white items-center justify-center w-[250px] text-[14px] z-50`} onMouseLeave={() => setIsActive(false)} >
+        <div className={`${isActive ? "flex" : "hidden"} flex-col absolute top-[47px] right-[-40] bg-white items-center justify-center w-[250px] text-[14px] z-50`} onMouseLeave={() => setIsActive(false)} >
 
             <div className="border-solid border-blueMain border-[2px] w-full h-[1px]"></div>
 

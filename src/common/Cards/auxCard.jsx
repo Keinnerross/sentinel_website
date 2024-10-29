@@ -43,7 +43,7 @@ const AuxCard = () => {
 
     return (
         <div
-            className="rounded-[20px] bg-[#10305f] w-[33%] h-full p-6  bg-cover bg-center relative cursor-pointer"
+            className="rounded-[20px] bg-[#10305f] md:w-[33%] h-[400px] md:h-full p-6  bg-cover bg-center relative cursor-pointer"
         >
 
             <div className="flex justify-between">

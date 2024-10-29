@@ -23,9 +23,21 @@ export const boletin = async () => {
 
 
     if (email) {
-        alerta.fire(`Entered email: ${email}`);
-    }
 
+        alerta.fire({
+
+            icon: "success",
+            title: "¡Gracias por suscribirte!",
+            html: `Correo: ${email}`,
+            showConfirmButton: false,
+
+            timerProgressBar: true,
+            timer: 3000,
+
+
+
+        })
+    }
 }
 
 

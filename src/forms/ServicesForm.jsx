@@ -69,8 +69,8 @@ const ServicesForm = () => {
 
     return (
         <form className='bg-slate-50 rounded-t-2xl rounded-b-3xl' ref={form} onSubmit={step === 1 ? handleNextStep : sendEmail}>
-            <div className='max-w-md mx-auto  px-6 pt-12 pb-12 text-slate-950 w-[450px]'>
-                <h1 className="text-3xl font-bold mb-6 text-center pb-4">Agenda una Reunión</h1>
+            <div className='max-w-md   px-6 pt-12 pb-12 text-gray-800 w-[90vw] md:w-[450px]'>
+                <h1 className="text-3xl font-bold mb-6 text-center pb-4">¡Cotiza Ahora!</h1>
                 {step === 1 && (
                     <>
                         <div className="mb-4">

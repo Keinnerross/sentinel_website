@@ -58,18 +58,18 @@ const About = () => {
             icon: <FaLock />,
         },
         {
-            text: 'Compatibilidad entre Dispositivos',
+            text: 'Compatibilidad Multiplataforma',
             icon: <FaShieldAlt />,
         },
     ];
 
     return (
         <div>
-            <div className="w-full flex justify-center items-center  pt-28 pb-20">
-                <div className="w-[80%] flex justify-center gap-16">
-                    <div className="w-[50%]">
+            <div className="w-full flex  justify-center items-center pt-12 md:pt-28 pb-20">
+                <div className="md:w-[80%] flex justify-center gap-16 flex-col md:flex-row">
+                    <div className="md:w-[50%] flex items-center flex-col text-center md:block md:text-left px-4 md:px-0">
                         <Tag title="Soñamos con transformar" color="orange-500" />
-                        <h2 className="text-5xl font-bold mb-6 py-2">Pasión por la Seguridad: Conociendo a Sentinel GPS</h2>
+                        <h2 className="text-3xl md:text-5xl font-bold mb-6 py-4 md:py-2">Pasión por la Seguridad: Conociendo a Sentinel GPS</h2>
                         <p className="text-lg mb-4">
                             En <strong>Sentinel GPS</strong>, nos dedicamos a ofrecer soluciones de rastreo GPS que transforman la manera en que las empresas gestionan sus flotas y recursos en Chile. Con un enfoque en la seguridad y el control, nuestra misión es proporcionar a nuestros clientes las herramientas necesarias para optimizar sus operaciones y garantizar la protección de sus activos.
                         </p>
@@ -78,19 +78,18 @@ const About = () => {
                         </p>
 
                     </div>
-                    <div className="w-[50%]">
+                    <div className="md:w-[50%] px-4 md:px-0">
 
 
-                        <img className="rounded-lg" src={aboutimg}></img>
-                        <div className="flex flex-wrap gap-4 p-6">
+                        <img className="rounded-lg " src={aboutimg}></img>
+                        <div className="flex flex-wrap gap-4 p-6 justify-center md:justify-start">
                             {benefits.map((benefit, index) => (
                                 <div
                                     key={index}
-                                    className="flex items-center border-[1px] border-solid border-orange-500 text-gray-800 
-                                    px-4 py-2 rounded-full hover:scale-[1.05] hover:bg-orange-500 hover:text-white cursor-pointer transition-all "
+                                    className="flex items-center border-[1px] border-solid border-orange-500 text-gray-800 px-4 py-2 rounded-full hover:scale-[1.05] hover:bg-orange-500 hover:text-white cursor-pointer transition-all  "
                                 >
                                     <span className="mr-2">{benefit.icon}</span>
-                                    <span>{benefit.text}</span>
+                                    <span className="">{benefit.text}</span>
                                 </div>
                             ))}
                         </div>
@@ -100,7 +99,7 @@ const About = () => {
             </div>
 
             <div className="bg-slate-900 flex justify-center items-center">
-                <div className="flex w-[80%] gap-8 justify-between ">
+                <div className="flex w-[80%] md:gap-8 justify-between flex-wrap md:flex-nowrap">
                     <CardAbout Icon={FaHandSparkles} title="Confiabilidad" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
                     <CardAbout Icon={FaHandshake} title="Compromiso " description="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
                     <CardAbout Icon={FaStar} title="Transparencia" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
