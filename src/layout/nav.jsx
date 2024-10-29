@@ -18,7 +18,7 @@ const Nav = ({ flex, scrollUp }) => {
                 </li>
                 <a href="/about"><li className="cursor-pointer hover:text-gray-600">Ventajas</li></a>
 
-                <li className="cursor-pointer hover:text-gray-600">Recursos</li>
+                <a href="/about">  <li className="cursor-pointer hover:text-gray-600">Recursos</li></a>
 
                 <Link to="/about" className="cursor-pointer hover:text-gray-600" onClick={() => scrollUp()}>Nosotros</Link>
             </ul>

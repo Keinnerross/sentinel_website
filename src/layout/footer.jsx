@@ -19,20 +19,20 @@ const Footer = () => {
 
         <div className="w-[75vw]  flex justify-between items-center z-50">
           <div className="text-white w-[50%] flex flex-col gap-4">
-            <h2 className="text-[42px] font-bold">¡Agenda una cita!</h2>
+            <h2 className="text-[42px] font-bold">¡No esperes más!</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo beatae minima in perspiciatis eum, voluptate vero veniam nam natus quia tempora mollitia at, voluptates velit, voluptatem impedit omnis id. Quod!
+            Haz tu cotización y descubre cómo Sentinel GPS puede transformar la gestión de tu flota. Nuestro equipo está listo para brindarte una atención personalizada y responder todas tus preguntas. ¡Haz clic en el botón y cotiza!
             </p>
           </div>
 
-          <Link to="/services/4" onClick={() => scrollToTop()}> <PrimaryButton textBtn="Solicitar una demo" /></Link>
+          <Link to="/services/4" onClick={() => scrollToTop()}> <PrimaryButton textBtn="Hacer Cotización" /></Link>
 
         </div>
       </div>
-      <footer className="bg-gray-100 py-10 flex flex-col items-center justify-center">
+      <footer className="bg-gray-100 py-8 flex flex-col items-center justify-center">
         <div className="w-[75vw]  container mx-auto px-4">
           {/* Newsletter Section */}
-          <div className="flex flex-col items-center mb-8">
+          <div className="flex flex-col items-center mb-8 py-10">
             <p className="text-blueMain font-semibold text-lg">Suscríbete a nuestro boletín<span className="ml-2">📧</span></p>
             <p className="text-gray-600 mb-4 w-[50vw] text-center">Al suscribirte, te mantendremos al día con nuestras promociones exclusivas, consejos útiles, y los avances más recientes en tecnología de rastreo y gestión de flotas.</p>
             <button className="bg-orange-500 hover:bg-orange-400 text-white font-semibold py-2 px-6 rounded-3xl flex gap-2 items-center" onClick={() => boletin()}>
