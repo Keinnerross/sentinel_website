@@ -1,5 +1,7 @@
 import { useState } from "react";
 import PrimaryButton from "../../../common/buttons/primaryButton";
+import { Link } from "react-router-dom";
+import { scrollToTop } from "../../../functionsUI";
 
 const CardService = ({ title, description, url, Icon, id }) => {
     const [isHover, setIsHover] = useState(false);
@@ -12,7 +14,7 @@ const CardService = ({ title, description, url, Icon, id }) => {
             className="min-h-[350px] md:min-h-[280px] w-full md:w-[30%] rounded-[12px] cursor-pointer bg-cover bg-center relative hover:shadow-header-shadow "
             style={{ backgroundImage: `url(${url})` }}
         >
-            <a href={`/services/${id}`}>
+            <Link to={`/services/${id}`} onClick={() => scrollToTop()}>
                 <div
                     className={`${isHover ? "opacity-100" : "opacity-100 md:opacity-0"
                         } transition-opacity duration-200 ease-in-out rounded-[12px] h-full absolute bottom-0 z-50 w-full flex items-end bg-gradient-to-t from-black/100 to-black/40`}
@@ -26,7 +28,7 @@ const CardService = ({ title, description, url, Icon, id }) => {
                         <PrimaryButton textBtn="Quiero saber más" />
                     </div>
                 </div>
-            </a>
+            </Link>
 
         </div >
     );

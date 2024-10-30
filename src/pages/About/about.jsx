@@ -100,10 +100,10 @@ const About = () => {
 
             <div className="bg-slate-900 flex justify-center items-center">
                 <div className="flex w-[80%] md:gap-8 justify-between flex-wrap md:flex-nowrap">
-                    <CardAbout Icon={FaHandSparkles} title="Confiabilidad" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
-                    <CardAbout Icon={FaHandshake} title="Compromiso " description="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
-                    <CardAbout Icon={FaStar} title="Transparencia" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
-                    <CardAbout Icon={MdScience} title="Innovación" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
+                    <CardAbout Icon={FaHandSparkles} title="Confiabilidad" description="Nuestra transparencia y responsabilidad son la base de la confianza con nuestros clientes." />
+                    <CardAbout Icon={FaHandshake} title="Compromiso " description="Nuestro compromiso con la innovación y la mejora continua asegura que siempre estén protegidos y conectados." />
+                    <CardAbout Icon={FaStar} title="Transparencia" description="Mantenemos a nuestros clientes informados brindando acceso a información precisa sobre nuestros procesos." />
+                    <CardAbout Icon={MdScience} title="Innovación" description="Nos dedicamos a desarrollar soluciones tecnológicas de vanguardia que mejoran la seguridad y la eficiencia." />
                 </div>
             </div>
 

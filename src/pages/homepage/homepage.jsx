@@ -1,34 +1,31 @@
 import PrimaryButton from "../../common/buttons/primaryButton";
 import MainCard from "../../common/Cards/mainCard";
 import AuxCard from "../../common/Cards/auxCard";
-import { services } from "./services/dataServices";
-import AccordionFAQ from "../../common/Accordion/AccordionFAQ";
-import { Button, ButtonGroup } from '@chakra-ui/react'
+// import AccordionFAQ from "../../common/Accordion/AccordionFAQ";
 import videoBanner from "../../assets/videos/1008.mp4"
 import TemperatureCard from "../../common/Cards/temperatureCard";
 import VideoSection from "./videoSection";
 import ServicesLayout from "./services/servicesLayout";
 import ProgramStatistics from "./program statistics/programStatistics";
 import { Link } from "react-router-dom";
-import Tag from "../../common/tags/tags";
 
 
 
 const HomePage = () => {
     return (
         <div className="flex flex-col justify-center items-center">
-            <div className="w-full h-[550px] flex justify-center items-center relative">
+            <div className="w-full md:h-[550px] flex justify-center items-center relative">
                 <div className={`flex  transition-[1s] h-full  absolute bottom-0  w-full  items-end bg-gradient-to-t from-black/75 to-black/75  z-[-1]`}></div>
                 <video src={videoBanner} autoPlay muted loop className="object-cover absolute w-[100%] h-full z-[-2] top-0" />
                 <div className="w-[90vw] md:w-[75%] flex justify-center items-center  gap-8 text-center  text-white  ">
-                    <div className="w-[100%] text-center flex-col flex justify-center items-center">
-                        <div className="flex  md:w-3/4 justify-center font-bold   ">
+                    <div className="w-[100%] text-center flex-col flex justify-center items-center py-16 ">
+                        <div className="flex  md:w-3/4 justify-center font-bold  ">
                         </div>
                         {/* , Seguridad y Control a tu Alcance */}
-                        <h2 className="text-5xl md:text-7xl font-extrabold line md:leading-[5rem]">GPS para tus Vehículos, Seguridad y Control a tu Alcance</h2>
-                        <p className="pb-[25px] pt-6"> the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame blame blame belongs </p>
+                        <h2 className="text-5xl md:text-7xl font-extrabold line md:leading-[5rem]"> GPS para tus Vehículos, Seguridad y Control a tu Alcance</h2>
+                        <p className="pb-[25px] pt-6 md:text-lg md:font-semibold md:w-[65vw]"> Nuestra plataforma avanzada te ofrece <span className="md:font-bold">precisión, seguridad y comodidad, sin complicaciones.</span> Rastrear tus activos, optimizar tus rutas y mantener la seguridad de tu equipo  <span className="md:font-bold">nunca ha sido tan sencillo.</span></p>
                         <Link to="/services/4" >
-                            <PrimaryButton textBtn="Solicita una Demo" long={true} />
+                            <PrimaryButton textBtn="Comienza Ahora" long={true} />
                         </Link>
 
                     </div>

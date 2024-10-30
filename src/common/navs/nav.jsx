@@ -16,9 +16,9 @@ const Nav = ({ flex, scrollUp }) => {
                 <li className="cursor-pointer relative hover:text-gray-600 flex gap-1 items-center " onMouseEnter={() => setIsActive(true)} >Soluciones <div className="pt-1"> <IoIosArrowDown /></div>
                     <HoverCard isActive={isActive} setIsActive={setIsActive} />
                 </li>
-                <a href="/about"><li className="cursor-pointer hover:text-gray-600">Ventajas</li></a>
+                <Link to="/about" onClick={() => scrollUp()}><li className="cursor-pointer hover:text-gray-600">Ventajas</li></Link>
 
-                <a href="/about">  <li className="cursor-pointer hover:text-gray-600">Recursos</li></a>
+                <Link to="/about" onClick={() => scrollUp()}>  <li className="cursor-pointer hover:text-gray-600">Recursos</li></Link>
 
                 <Link to="/about" className="cursor-pointer hover:text-gray-600" onClick={() => scrollUp()}>Nosotros</Link>
             </ul>

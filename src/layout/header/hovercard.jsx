@@ -1,4 +1,7 @@
+import { scrollToTop } from "../../functionsUI";
 import { services } from "../../pages/homepage/services/dataServices"
+import { Link } from "react-router-dom";
+
 
 const HoverCard = ({ isActive, setIsActive }) => {
     return (
@@ -9,8 +12,8 @@ const HoverCard = ({ isActive, setIsActive }) => {
             <div className="p-6">
                 <ul className="flex-col flex cursor-pointer text-gray-600">
                     {services ? services.map((service, i) =>
-                        <a href={`/services/${i}`} key={i} className="flex gap-2 items-center hover:text-slate-950 py-2" >
-                            <service.icon size={17}/> <li>{service.title}</li></a>) : "No hay nada que mostrar"}
+                        <Link to={`/services/${i}`} key={i} className="flex gap-2 items-center hover:text-slate-950 py-2" onClick={() => scrollToTop()}>
+                            <service.icon size={17} /> <li>{service.title}</li></Link>) : "No hay nada que mostrar"}
                 </ul>
             </div>
         </div >
